@@ -52,6 +52,27 @@ Bug fixes:
 ------------------
 
 Breaking changes:
+New features:
+
+- Optional auto-login after passwort (re-)set.
+  [jensens]
+
+- Provide an utility ``dump_json_to_text`` that works both on Python 2.7 an Python 3.
+  [ale-rt]
+
+- Prepare for Python 2 / 3 compatibility.
+  [pbauer]
+
+- Fix imports to work with Python 3.
+  [pbauer]
+
+- Mockup update.
+  [thet]
+
+- add link to Plone.org VPAT accessibility statement
+  [tkimnguyen]
+
+Bug fixes:
 
 - Remove five.pt for Zope 4
   [jensens]
@@ -207,5 +228,5 @@ Bug Fixes:
   It does not make much sense anyway and we test nowhere if there is a came_from on that link.
   [jensens]
 
-- Remove depricated ``type`` attribute from ``script`` and ``link`` tags.
+- Remove deprecated ``type`` attribute from ``script`` and ``link`` tags.
   [newbazz]
