@@ -105,6 +105,9 @@ New Features:
 
 Bug Fixes:
 
+- Remove unused mail_password.py from skins/plone_scripts
+  [agitator]
+
 - Hide ``plone.app.querystring`` from add-ons control panel.
   Fixes `issue 2426 <https://github.com/plone/Products.CMFPlone/issues/2426>`_.
   [maurits]
