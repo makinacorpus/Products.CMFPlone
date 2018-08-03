@@ -304,7 +304,6 @@ we expect ${NUM} hits
     #This assumes we have the 2 "Test document" and "Test folder" items from the
     #robot setup, as well as the 4 additional items from the "a bunch of folders" macro
     #works only for ${NUM} > 0
-    Wait Until Element Is Visible  css=dl.searchResults
     Wait until result is no longer marked
     ${hits}=  Execute Javascript  return $('.searchResults > dd').length
     Should Be Equal As Integers  ${hits}  ${NUM}
@@ -317,8 +316,8 @@ a logged-in manager
     Enable autologin as  Manager  Site Administrator  Contributor  Reviewer
 
 mark results
-    Wait Until Element Is Visible  css=dl.searchResults
+    Wait for condition  return $("dl.searchResults").length > 0
     Execute Javascript  $("dl.searchResults").attr("marker", "marked")
 
 wait until result is no longer marked
-    Wait for condition  return $("dl.searchResults").attr("marker") != "marked"
+    Wait for condition  return $("dl.searchResults").length > 0 && $("dl.searchResults").attr("marker") != "marked"
