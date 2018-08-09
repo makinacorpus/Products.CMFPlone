@@ -59,5 +59,6 @@ from Products.CMFPlone.interfaces.siteroot import IPloneSiteRoot
 from Products.CMFPlone.interfaces.siteroot import ITestCasePloneSiteRoot
 from Products.CMFPlone.interfaces.structure import INonStructuralFolder
 from Products.CMFPlone.interfaces.syndication import ISiteSyndicationSettings
+from Products.CMFPlone.interfaces.theme import IDefaultPloneLayer
 from Products.CMFPlone.interfaces.translationservice import ITranslationServiceTool
 from Products.CMFPlone.interfaces.workflow import IWorkflowChain

@@ -80,7 +80,6 @@ INSTALL_REQUIRES = [
     'plone.schema',
     'plone.session',
     'plone.subrequest',
-    'plone.theme',
     'plonetheme.barceloneta',
     'pyScss',
     'six',

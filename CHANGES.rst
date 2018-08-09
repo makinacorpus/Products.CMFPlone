@@ -10,9 +10,15 @@ Changelog
 
 Breaking changes:
 
-- Remove all dependencies on plone.app.controlpanel. 
-  Third party code need either to depend on plone.app.controlpanel 4.0,
+- Remove all dependencies on plone.theme.
+  Third party code need either to depend on plone.theme 4.0,
   which is a backward compatibilit package only, or also update to not depend on it anymore.
+  which is a backward compatibility package only, or also update to not depend on it anymore.
+  [jensens]
+
+- Remove all dependencies on plone.app.controlpanel.
+  Third party code need either to depend on plone.app.controlpanel 4.0,
+  which is a backward compatibility package only, or also update to not depend on it anymore.
   [jensens]
 
 - New browser view based login code - merged from plone.login (credits to esteele, pbauer, agitator, jensens, et al).

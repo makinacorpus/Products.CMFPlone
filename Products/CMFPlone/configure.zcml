@@ -41,7 +41,6 @@
 
   <!-- viewlets zope 3 layers support for themes -->
   <include package="plone.browserlayer" />
-  <include package="plone.theme" />
 
   <!-- multilingual -->
   <include package="plone.app.multilingual" />
@@ -122,6 +121,13 @@
   <utility
       component=".utils.getQuality"
       provides="plone.scale.interfaces.IScaledImageQuality"
+      />
+
+  <!-- mark theme layer -->
+  <subscriber
+      for="Products.CMFCore.interfaces.ISiteRoot
+           zope.traversing.interfaces.IBeforeTraverseEvent"
+      handler=".theme.mark_layer"
       />
 
 </configure>
