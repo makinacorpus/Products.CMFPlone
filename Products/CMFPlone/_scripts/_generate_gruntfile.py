@@ -36,7 +36,10 @@ def applyBrowserLayers(site):
     sm = getSiteManager(site)
     layers = sm.getAllUtilitiesRegisteredFor(ILocalBrowserLayerType)
     for layer in layers:
-        alsoProvides(request, layer)
+        try:
+            alsoProvides(request, layer)
+        except Exception:
+            pass
 
 
 # some initial script setup
